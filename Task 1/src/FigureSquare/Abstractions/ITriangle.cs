@@ -7,7 +7,13 @@
         /// </summary>
         /// <returns>Периметр.</returns>
         public double CalculatePerimeter();
-        
+
+        /// <summary>
+        /// Рассчитать площадь треугольника.
+        /// </summary>
+        /// <returns>Площадь.</returns>
+        public double CalculateSquare();
+
         /// <summary>
         /// Получить стороны треугольника. 
         /// </summary>
@@ -21,9 +27,9 @@
         public bool IsRightTriangle();
 
         /// <summary>
-        /// Проверить, является ли треугольник правильным.
+        /// Проверить, является ли треугольник прямоугольным.
         /// </summary>
-        /// <returns>True - если правильный, False - если нет.</returns>
+        /// <returns>True - если прямоугольный, False - если нет.</returns>
         public bool IsRectangleTriangle();
     }
 }
