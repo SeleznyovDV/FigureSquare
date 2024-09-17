@@ -1,6 +1,6 @@
 ﻿namespace FigureSquare.Abstractions
 {
-    public interface ITriangle
+    public interface ITriangle : IFigure
     {
         /// <summary>
         /// Рассчитать периметр треугольника.

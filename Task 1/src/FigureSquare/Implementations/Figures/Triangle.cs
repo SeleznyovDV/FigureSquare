@@ -16,6 +16,16 @@
         /// <param name="sideC">Сторона C.</param>
         public Triangle(double sideA, double sideB, double sideC)
         {
+            if (sideA <= 0 || sideB <= 0 || sideC <= 0)
+            {
+                throw new ArgumentException("Стороны треугольника должны быть положительными.");
+            }
+
+            if (sideA + sideB <= sideC || sideA + sideC <= sideB || sideB + sideC <= sideA)
+            {
+                throw new ArgumentException("Сумма двух сторон должна быть больше третьей стороны.");
+            }
+
             _sideA = sideA;
             _sideB = sideB;
             _sideC = sideC;

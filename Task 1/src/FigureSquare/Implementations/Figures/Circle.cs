@@ -12,6 +12,11 @@
         /// <param name="radius">Радиус</param>
         public Circle(double radius)
         {
+            if (radius <= 0)
+            {
+                throw new ArgumentException("Радиус должен быть положительным.");
+            }
+
             _radius = radius;
         }
 

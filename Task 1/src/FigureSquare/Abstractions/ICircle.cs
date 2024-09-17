@@ -1,6 +1,6 @@
 ﻿namespace FigureSquare.Abstractions
 {
-    public interface ICircle
+    public interface ICircle : IFigure
     {
         /// <summary>
         /// Рассчитать площадь круга.
