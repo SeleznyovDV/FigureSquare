@@ -1,7 +1,7 @@
 ﻿namespace FigureSquare.Implementations.Figures
 {
     using FigureSquare.Abstractions;
-    internal abstract class Figure : IFigure
+    public abstract class Figure : IFigure
     {
         /// <summary>
         /// Рассчитать площадь фигуры.
